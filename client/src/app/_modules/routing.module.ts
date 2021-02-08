@@ -11,6 +11,7 @@ import { TestErrorsComponent } from '../errors/test-errors/test-errors.component
 import { NotFoundComponent } from '../errors/not-found/not-found.component';
 import { ServerErrorComponent } from '../errors/server-error/server-error.component';
 import { MemberEditComponent } from '../members/member-edit/member-edit.component';
+import { PreventUnsavedGuard } from '../_guards/prevent-unsaved.guard';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -21,23 +22,23 @@ const routes: Routes = [
     children: [
       {
         path: 'members',
-        component: MemberListComponent,
+        component: MemberListComponent
       },
       { path: 'members/:username', component: MemberDetailComponent },
-      { path: 'member/edit', component: MemberEditComponent },
+      { path: 'member/edit', component: MemberEditComponent, canDeactivate: [PreventUnsavedGuard] },
       { path: 'lists', component: ListsComponent },
-      { path: 'messages', component: MessagesComponent },
-    ],
+      { path: 'messages', component: MessagesComponent }
+    ]
   },
   { path: 'errors', component: TestErrorsComponent },
   { path: 'not-found', component: NotFoundComponent },
   { path: 'server-error', component: ServerErrorComponent },
-  { path: '**', component: NotFoundComponent, pathMatch: 'full' },
+  { path: '**', component: NotFoundComponent, pathMatch: 'full' }
 ];
 
 @NgModule({
   declarations: [],
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule],
+  exports: [RouterModule]
 })
 export class RoutingModule {}
