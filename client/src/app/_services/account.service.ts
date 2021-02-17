@@ -6,7 +6,7 @@ import { environment } from 'src/environments/environment';
 import { User } from '../_models/user';
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: 'root'
 })
 export class AccountService {
   baseUrl = environment.apiUrl;
@@ -22,14 +22,14 @@ export class AccountService {
       map((response: User) => {
         const user = response;
         if (user) {
-          localStorage.setItem('user', JSON.stringify(user));
-          this.currentUser.next(user);
+          this.setCurrentUser(user);
         }
       })
     );
   }
 
   setCurrentUser(user: User) {
+    localStorage.setItem('user', JSON.stringify(user));
     this.currentUser.next(user);
   }
 
@@ -42,8 +42,7 @@ export class AccountService {
     return this.http.post(this.baseUrl + 'account/register', model).pipe(
       map((user: User) => {
         if (user) {
-          localStorage.setItem('user', JSON.stringify(user));
-          this.currentUser.next(user);
+          this.setCurrentUser(user);
         }
       })
     );
