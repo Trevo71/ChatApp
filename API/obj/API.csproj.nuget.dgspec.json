@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\trevi\\source\\MyProjects\\ChatApp\\API\\API.csproj": {}
+    "C:\\Users\\trevi\\source\\MyProjects\\ChatApp\\api\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\trevi\\source\\MyProjects\\ChatApp\\API\\API.csproj": {
+    "C:\\Users\\trevi\\source\\MyProjects\\ChatApp\\api\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\trevi\\source\\MyProjects\\ChatApp\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\trevi\\source\\MyProjects\\ChatApp\\api\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\trevi\\source\\MyProjects\\ChatApp\\API\\API.csproj",
+        "projectPath": "C:\\Users\\trevi\\source\\MyProjects\\ChatApp\\api\\API.csproj",
         "packagesPath": "C:\\Users\\trevi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\trevi\\source\\MyProjects\\ChatApp\\API\\obj\\",
+        "outputPath": "C:\\Users\\trevi\\source\\MyProjects\\ChatApp\\api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
