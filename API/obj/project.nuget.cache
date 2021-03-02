@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "i5vfLR/u8yBnH5xbuKP/nmNA509lEqWlAHNwQTaBFqDZJ5orEGgBCQ/1L8v2ES+FGbPsDsIczqBkzZaAvAsp9Q==",
+  "dgSpecHash": "B614nyb9wVTjsmvFBkDSt6qrsHNN5osjr4VTAyAeT5/dlLv7/3Gqh8GxGg+c/h8408EgU6sgK2kHTEINJAJnbA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\trevi\\source\\MyProjects\\ChatApp\\api\\API.csproj",
+  "projectFilePath": "C:\\Users\\trevi\\source\\MyProjects\\ChatApp\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\trevi\\.nuget\\packages\\automapper\\10.1.0\\automapper.10.1.0.nupkg.sha512",
     "C:\\Users\\trevi\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.0\\automapper.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",
