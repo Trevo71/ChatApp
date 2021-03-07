@@ -1,4 +1,5 @@
 using API.Data;
+using API.Data.Repositories;
 using API.Helpers;
 using API.Interfaces;
 using API.Repositories;
@@ -7,6 +8,7 @@ using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+
 
 namespace API.Extensions
 {
@@ -18,7 +20,9 @@ namespace API.Extensions
             services.AddScoped<ITokenService, TokenService>(); 
             services.AddScoped<IPhotoService, PhotoService>();
             services.AddScoped<LogUserActivity>();
-            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IMessageRepository, MessageRepository>();
+            services.AddScoped<IUserRepository,UserRepository>();
+            services.AddScoped<ILikesRepository, LikesRepository>();
             services.AddAutoMapper(typeof(AutoMapperProfiles).Assembly);
             services.AddDbContext<DataContext>(options =>
             {
